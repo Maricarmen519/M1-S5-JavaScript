@@ -121,7 +121,7 @@ console.log(nueva++)
 var nueva1= 1
 console.log(nueva1)
 console.log(nueva1--)
-//OPERADORES LÓGICOS
+/*OPERADORES LÓGICOS
 //Igualdad
 var igualdad =  3
 3==3 //True
@@ -145,7 +145,7 @@ var igualdad =  3
 5 > 3 || 4<10 = true
 //AND &&
 5 > 3 && 4<10 = true
-5 > 3 && 15<10 = false
+5 > 3 && 15<10 = false*/
 
 //TRUTHY
 console.log(true)//verdadero
@@ -156,10 +156,64 @@ console.log(Boolean({}))//objeto vacío
 console.log(Boolean(function(){}))//Función vacía
 
 //FALSY
-console.log(falso)//falso
+console.log(false)//falso
 console.log(Boolean(0))//cero
 console.log(Boolean(""))//str  vacío
 console.log(Boolean(null))//null
 console.log(Boolean(undefined))//undefined
 console.log(Boolean(NaN))//NaN
+
+//CONDICIONALES IF ELSE:PERMITEN EVALUAR CONDICONES
+var respuesta= 3;
+if(respuesta=== 3){
+    console.log("Respuesta correcta")
+}else if(respuesta  === 2) {
+    console.log("Casi correcta")
+}
+else{//Ejecuta por default al no entrar en las condiciones anteriores
+    console.log("Respuesta incorrecta")
+
+}
+var respuesta= "asdas";
+if(respuesta=== 3){
+    console.log("Respuesta correcta")
+}else if(respuesta %2 === 0) {
+    console.log("La respuesta es par");
+    mensaje= "Entró como par"
+    alert("¡Bien hecho!")
+}else if (respuesta ==2){
+    console.log("¡Casi!")
+}
+else{//Ejecuta por default al no entrar en las condiciones anteriores
+    console.log("Respuesta incorrecta")
+    mensaje= "Todo mal"
+
+}
+console.log(mensaje);
+
+//SWITCH: RECIBE ALGO A EVALUAR
+var respuesta= 2;
+switch(respuesta){
+    case 3: 
+        console.log("Respuesta correcta");
+        break;//BREAK hace romper el flujo
+    case 2:
+        console.log("Casi!")
+        break;
+    default:
+        console.log("Todo mal")
+
+}
+
+//BUCLE FOR
+//Sintaxisvariable; condición, acción
+for(var i=0; i<10; i++){
+    console.log(i)
+}
+//BUCLE WHILE
+var l = 0;
+while(l<=10){
+    console.log(l);
+    l++;//ponerel incremento del while
+}
 
