@@ -53,3 +53,113 @@ Poner el null para borrar el valor
 var variableNull= null;
 console.log(variableNull)
 //JavaScript será la base para todo
+
+
+
+//COERCIÓN DE DATOS= Conversión de un tipo de dato a otro
+//Forma explícita
+var num= 5
+console.log(typeof(num))
+
+console.log( String(num))
+console.log(typeof String(num))
+//Fotma implícita
+console.log(num + "")
+console.log(typeof (num + ""))
+
+//Convertir de STR a INT
+//forma implicita
+var numero= "150"
+console.log(numero)
+
+console.log(+numero);
+console.log(typeof(+numero))
+
+//forma explícita
+console.log(Number(numero))
+console.log(typeof(Number(numero)))
+//*Tener cuidaddo conla conversión implicita proque si quiero hacer una suma termianria concatenando 
+//y no sumando.
+
+//DE NUMERO Y STRING A BOOLEAN
+//TRUE 1 FALSE 0
+var condicion4= 1;
+var cndicion= " ";
+console.log(condicion)
+console.log(condicion4)
+
+//Forma explícita
+console.log(Boolean(condicion4))
+console.log(Boolean(condicion))
+//Forme implícita
+console.log(!!condicion)
+console.log(!!condicion4)
+//OPERADORES ARITMETICOS
+//SUMA
+10+5
+//RESTA
+10-5
+//MULTIPLICACIÓN
+10*4
+//DIVISIÓN
+30/6
+//EXPONENTES
+3**2 //AL CUADRADO
+3**4// AL CUBO
+4**4// A CUARTA POTENCIA
+//RESIDUO DE DIVISIONES O MODULO
+10%3
+//sobra 1
+10%3
+//sobran 2
+//INCREMENTO
+var nueva= 0
+console.log(nueva)
+console.log(nueva++)
+
+//DECREMENTO
+var nueva1= 1
+console.log(nueva1)
+console.log(nueva1--)
+//OPERADORES LÓGICOS
+//Igualdad
+var igualdad =  3
+3==3 //True
+3== "3"//True
+//Extrictamente igual
+3===3 //True
+3=== "3"//False
+//Diferente
+3!=4//False
+//Extrictamente desigual
+3!=="3"//False
+//Mayor que >
+10 > 5//true
+//Menor que <
+5 < 10//true
+//Mayor o igual que =>
+40 >= 35 
+//Menor igual a <=
+5 <= 5
+// OR ||
+5 > 3 || 4<10 = true
+//AND &&
+5 > 3 && 4<10 = true
+5 > 3 && 15<10 = false
+
+//TRUTHY
+console.log(true)//verdadero
+console.log(Boolean(1))//uno
+console.log(Boolean("5"))//str no vacío
+console.log(Boolean([]))//arreglo vacío
+console.log(Boolean({}))//objeto vacío
+console.log(Boolean(function(){}))//Función vacía
+
+//FALSY
+console.log(falso)//falso
+console.log(Boolean(0))//cero
+console.log(Boolean(""))//str  vacío
+console.log(Boolean(null))//null
+console.log(Boolean(undefined))//undefined
+console.log(Boolean(NaN))//NaN
+
