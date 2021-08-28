@@ -240,7 +240,7 @@ segundaFuncion(23)
 //Se usan cuando se inicializa una función o configuración en script
 //Ya que se ejecuta en cuanto es declarada, no se puede hacer referencia a esta
 //para volver a ejecutar
-//NO ESMUY COMÚN DE USAR,PERO HAY HERREAMIENTAS QUE SE TIENEN QUE EJECUTAR AL INICIO DE MI WEB O APP
-(function (nombre) {
+//NO ESMUY COMÚN DE USAR,PERO HAY HERREAMIENTAS QUE SE TIENEN QUE EJECUTAR AL INICIO DEMI WEB O APP
+/*(function (nombre) {
     console.log('Hola, qué tal? ' + nombre);
-})('Car')
+})('Car')*/
