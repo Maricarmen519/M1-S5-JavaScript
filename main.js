@@ -216,4 +216,31 @@ while(l<=10){
     console.log(l);
     l++;//ponerel incremento del while
 }
+//BUCLE DO WHILE
+var l = 0;
+do{
+    console.log(l);
+}
+while (l !== 0);
 
+//FUNCIONES
+function miPrimeraFuncion(nombre){
+    console.log("Hola, ¿Qué hongo?"+ nombre)
+}
+miPrimeraFuncion("Ramón")
+miPrimeraFuncion(156)
+miPrimeraFuncion(true)
+
+var segundaFuncion= function(edad){
+    console.log("Esta es una expresión defunción " + edad);
+
+}
+segundaFuncion(23)
+//EXPRESIONES EJECUTADAS INMEDIATAMENTE
+//Se usan cuando se inicializa una función o configuración en script
+//Ya que se ejecuta en cuanto es declarada, no se puede hacer referencia a esta
+//para volver a ejecutar
+//NO ESMUY COMÚN DE USAR,PERO HAY HERREAMIENTAS QUE SE TIENEN QUE EJECUTAR AL INICIO DE MI WEB O APP
+(function (nombre) {
+    console.log('Hola, qué tal? ' + nombre);
+})('Car')
